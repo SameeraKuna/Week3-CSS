@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-image: repeating-linear-gradient(rgba(157, 157, 244, 0.805),rgb(238, 142, 158));
+}
+.container{
+    width: 15rem;
+    height:20rem;
+    margin: 50% 50%;
+    border: 3px solid blue;
+    border-radius: 10px;
+    background-color: rgb(241, 238, 176);
+}
+h3{
+   text-align: center;
+   color: rgb(3, 3, 185);
+   margin-bottom: 10px;
+}
+p{
+    text-align: center;
+    color: rgb(134, 57, 3);
+    font-size: large;
+}

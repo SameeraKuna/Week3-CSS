@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css"> 
+   
+</head>
+<body>
+    <!-- For Heading -->
+    <div class="header">
+        <p id="p1">Smart Application Portal</p>
+       <hr> 
+        <p id="p2">Complete Your Professional Application</p>
+        <br />
+    </div>
+    <!-- For form -->
+     <div class="form">
+    <form action="/action_page.php" method="post"> 
+        <!-- For grid -->
+         <div class="grid">
+            <!-- For Personal Information -->
+            <div class="item personal">
+                <p class="bluehead">Personal Information</p>
+                <hr>
+                <br />
+                <label for="name"><strong>Full Name<span style="color:red;">*</span> </strong></label>
+                <input type="text" id="name" name="name" required> <br />
+                <label for="email"><strong>Email </strong></label>
+                <input type="url" name="email" id="email" required><br />
+                <label for="password"><strong>Password </strong></label>
+                <input type="text" name="password" id="password" required><br />
+                <label for="dob"><strong>Date of Birth </strong></label>
+                <input type="date" name="dob" id="dob" placeholder=" " required><br /> 
+                <!-- For Gender -->
+                <div class="item gender">
+                    <p class="blueheadgender">Gender</p>
+                    <hr> 
+                    <br />
+                    <label for="gender"><strong></strong></label>
+                    <input id="gender" name="gender" type="radio" required>Male
+                    <input id="gender" name="gender" type="radio">Female <br />
+                    <br />
+                    <textarea id="message" name="message" rows="3" cols="35">  Short bio
+                    </textarea><br />   
+                    <br />
+                </div>
+            </div>
+            <!-- For Address Information -->
+            <div class="item address">
+                <p class="bluehead">Address Information</p>
+                <hr>
+                <br />
+                <label for="street"><strong>Street </strong></label>
+                <input type="text" id="street" name="street" required> <br />
+                <label for="city"><strong>City </strong></label>
+                <input type="text" id="city" name="city" required> <br />
+                <label for="state"><strong>State </strong></label>
+                <input type="text" id="state" name="state" required> <br />
+                <label for="country"><strong>Country </strong></label>
+                <select id="country" name="country" required>
+                <option value="India">India</option>
+                        <option value="Germany">Germany</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Japan">Japan</option>
+                        </select><br />
+                <label for="zip"><strong>ZIP Code </strong></label>
+                <input type="text" id="zip" name="zip" required> <br />
+            </div>
+
+            <!-- For Education Details -->
+            <div class="item education">
+                 <p class="bluehead">Educational Details</p>
+                <hr>
+                <br />
+                <label for="qualification1"><strong>Highest Qualification </strong></label><br />
+                <select class="qualification" id="qualification1" name="qualification" required >
+                <option value="" disabled selected hidden></option>
+                    <option value="btech">Bachelor of Technology</option>
+                    <option value="be">BE</option>
+                    <option value="bsc">BSc</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="10th">10<sup>th</sup></option>
+                    </select> <span>"             "</span>
+                <label for="qualification2"></label>
+                <select class="qualification" id="qualification2" name="qualification" required >
+                    <option value="" disabled selected hidden></option>
+                    <option value="btech">Bachelor of Technology</option>
+                    <option value="be">BE</option>
+                    <option value="bsc">BSc</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="10th">10<sup>th</sup></option>
+                    </select><br />
+                <label for="skills"><strong>Skills </strong></label><br />
+                <select id="skills" name="skills" required>
+                        <option value="" selected hidden>Search l...</option>
+                        <option value="1">AWS</option>
+                        <option value="2">AZURE</option>
+                        <option value="3">T-SQL</option>
+                        <option value="4">HTML</option>
+                        <option value="5">CSS</option>
+                        </select>
+                <input type="url" name="tags" placeholder="&#128188; Add Tags"><br />
+                <br />
+                <input type="file">
+            </div>
+            <!-- For Job Preferences -->
+            <div class="item job">
+                <p class="bluehead">Job Preferences</p>
+                <hr>
+                <br />
+                <label for="role"><strong>Preferred Role </strong></label><br />
+                <select id="role" name="role">
+                <option value="" disabled selected hidden></option>
+                        <option value="1">AWS engineer</option>
+                        <option value="2">AZURE engineer</option>
+                        <option value="3">T-SQL Developer</option>
+                        <option value="4">FrontEnd Developer</option>
+                        <option value="5">DotNet Developer</option>
+                        </select>
+                <label for="role"></label>
+                <select id="role" name="skills">
+                <option value="" disabled selected hidden></option>
+                <option value="1">AWS engineer</option>
+                        <option value="2">AZURE engineer</option>
+                        <option value="3">T-SQL Developer</option>
+                        <option value="4">FrontEnd Developer</option>
+                        <option value="5">DotNet Developer</option>
+                        </select><br />
+                <label for="salaray"><strong>Expected Salary </strong></label><br />
+                <input type="text" id="salary" name="salary" required> <br />
+                <label for="portfolio"><strong>Portfolio URL </strong></label><br />
+                <input type="url" id="portfolio" name="portfolio" required> <br />
+            </div>
+            <!-- For Security -->
+            <div class="item security">
+                <p class="bluehead">Security & Declaration</p>
+                <hr>
+                <br />
+                <label class="checkbox-container" for="TC">
+                <input id="TC" type="checkbox" name="TC" required><span class="checkmark"></span> &nbsp;&nbsp;I agree to the Terms & Conditions.
+                </label><br /> 
+                <br />
+                <div class="button">
+                    <button type="submit">Submit Application</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </div>
+    </form> 
+    </div> 
+    </div> 
+    <!-- For footer -->
+   <div class="footer">
+      <p>&copy; 2026 Smart Application Portal</p>
+   </div>  
+</body>    
