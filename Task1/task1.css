@@ -23,7 +23,7 @@ body{
 }
 .image{
     /* To style image */
-    aspect-ratio: 3 / 3;   /* Makes a perfect 4:3 frame */
+    aspect-ratio: 3 / 3;   
     overflow: hidden;
 }
 .image img{
@@ -32,7 +32,6 @@ body{
     height: 100%;
     object-fit: contain;     /* Ensures no distortion without image crop*/
     object-position: center;
-
 }
 h3{
    text-align: center;

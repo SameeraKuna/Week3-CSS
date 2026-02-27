@@ -3,44 +3,35 @@
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: Arial, sans-serif;
-      background: #f4f5f7;
-      padding: 20px;
     }
-
     .container {
-      max-width: 600px;
+      width: 80%;
       margin: auto;
-      background: #fff;
-      border-radius: 10px;
     }
-
-    .image {
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
-    }
-    
-    .image img {
+    img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
+      display: block;
+      object-fit: cover; 
     }
-
     .stickybar {
       position: sticky;
       top: 0;
       border: 2px solid black;
       background: #fff;
       padding: 15px;
-      display: flex;
-      justify-content: space-between;
       /* z-index applies only to elements, accept both positive and negative values.
       More z-index value more is at the top. */
       z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-
+    h2{
+      margin: 0;
+    }
     .scrolling {
       padding: 20px;
       line-height: 1.6;

@@ -1,0 +1,47 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/* Full height for hero-section */
+.hero {
+    height: 100vh;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-artificial-intelligence-touch-technology-background-image-image_187856.jpg");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* To overlay content on top of the hero image:
+    Make the parent position: relative
+    Make the content position: absolute */
+.hero-content {
+    position: absolute;
+    top: 50%;          
+    left: 50%;   
+    /* Translate shifts the element back by half of its own width and 
+    height so it's perfectly centered. */
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);       
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.hero-content button {
+        padding: 12px 28px;
+        font-size: 1.1rem;
+        border: none;
+        background-color: #ff5a5f;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }

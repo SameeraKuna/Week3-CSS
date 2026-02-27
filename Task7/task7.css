@@ -1,0 +1,59 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    /* Gallery thumbnails */
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      cursor: pointer;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    /* Popup Overlay */
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    /* Show popup when targeted */
+    .popup:target {
+      display: flex;
+    }
+
+    /* Popup Image */
+    .popup img {
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    /* Close Button */
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+/* Created thumbnails
+Added hidden popup containers
+Styled thumbnails
+Created overlay popup
+Used :target to show popup (CSS only)
+Centered the large image
+Added close button */
